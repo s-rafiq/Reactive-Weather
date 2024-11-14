@@ -3,17 +3,20 @@ import sunny from "../assets/Sunny.svg";
 import rainy from "../assets/Rainy.svg";
 import cloudy from "../assets/Cloudy.svg";
 import partlycloudy from "../assets/PartlyCloudy.svg";
+import snowy from "../assets/Snowy.svg";
 
 function WeatherCard(props) {
   let icon;
   if (props.data.forecast === "Sunny") {
-    icon = sunny;
+    icon = sunny
   } else if (props.data.forecast === "Rainy") {
-    icon = rainy;
+    icon = rainy
   } else if (props.data.forecast === "Cloudy") {
-    icon = cloudy;
+    icon = cloudy
   } else if (props.data.forecast === "Partly cloudy") {
-    icon = partlycloudy;
+    icon = partlycloudy
+  } else if (props.data.forecast === "Snowy") {
+    icon = snowy
   }
 
   return (
