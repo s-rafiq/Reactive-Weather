@@ -8,15 +8,15 @@ import snowy from "../assets/Snowy.svg";
 function WeatherCard(props) {
   let icon;
   if (props.data.forecast === "Sunny") {
-    icon = sunny
+    icon = sunny;
   } else if (props.data.forecast === "Rainy") {
-    icon = rainy
+    icon = rainy;
   } else if (props.data.forecast === "Cloudy") {
-    icon = cloudy
+    icon = cloudy;
   } else if (props.data.forecast === "Partly cloudy") {
-    icon = partlycloudy
+    icon = partlycloudy;
   } else if (props.data.forecast === "Snowy") {
-    icon = snowy
+    icon = snowy;
   }
 
   return (
@@ -39,4 +39,3 @@ function WeatherCard(props) {
 }
 
 module.exports = WeatherCard;
-
